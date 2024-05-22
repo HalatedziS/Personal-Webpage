@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Website</title>
   <link rel="stylesheet" href="simple-grid.css">
-  <link rel="stylesheet" href="styles.css"> <!-- Assume this is your custom CSS file -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <header class="row">
-      <div class="col-12">
+    <header class="row intro-section">
+      <div class="intro-text col-12 col-8-sm">
         <h1>Halatedzi Siaga</h1>
+        <h2>Introduction</h2>
+        <p>Hey there, I'm Halatedzi Siaga, a commerce graduate with a passion for technology and innovation. Currently diving into web development and Agile methodologies, I'm all about embracing challenges and making a difference in the ever-evolving world of business and tech. Let's connect and explore the possibilities together!</p>
       </div>
       <div class="intro-image col-12 col-4-sm">
         <img src="images/User1.jpg" alt="User Image">
@@ -20,63 +22,57 @@
 
     <section class="row">
       <div class="col-12">
-        <h2>Introduction</h2>
-        <p>Hey there, I'm Halatedzi Siaga, a commerce graduate with a passion for technology and innovation. Currently diving into web development and Agile methodologies, I'm all about embracing challenges and making a difference in the ever-evolving world of business and tech. Let's connect and explore the possibilities together!</p>
-      </div>
-    </section>
-
-    <section class="row">
-      <div class="col-12">
         <h2>Which City?</h2>
         <img src="images/UK.jpg" alt="City Image">
-        <p><h4>London, UK</h4>London is a global financial hub with a rich history and cultural diversity. As a major center for commerce and technology, it provides ample opportunities for professionals in fields like finance, tech, and entrepreneurship. Its thriving restaurant scene and vibrant arts and entertainment make it an exciting place to live and work.</p>
+        <h4>London, UK</h4>
+        <p>London is a global financial hub with a rich history and cultural diversity. As a major center for commerce and technology, it provides ample opportunities for professionals in fields like finance, tech, and entrepreneurship. Its thriving restaurant scene and vibrant arts and entertainment make it an exciting place to live and work.</p>
       </div>
     </section>
 
     <section class="row">
       <div class="col-12">
         <h2>A Foreign Language</h2>
-        <p>Spanish-It's widely spoken, vibrant, and opens up new opportunities for travel and connections. Plus, it's a beautiful language with rich culture and history.</p>
+        <p>Spanish - It's widely spoken, vibrant, and opens up new opportunities for travel and connections. Plus, it's a beautiful language with rich culture and history.</p>
         <table>
-          <tr>
-            <td>Good Evening/GoodNight</td>
-            <td>Buenas noches</td>
-          </tr>
-          <tr>
-            <td>Thank You</td>
-            <td>Gracias</td>
-          </tr>
-          <tr>
-            <td> Please</td>
-            <td>Por favor</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>English</th>
+              <th>Spanish</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Good Evening/Good Night</td>
+              <td>Buenas noches</td>
+            </tr>
+            <tr>
+              <td>Thank You</td>
+              <td>Gracias</td>
+            </tr>
+            <tr>
+              <td>Please</td>
+              <td>Por favor</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </section>
 
-    <section class="row">
-      <div class="col-12">
-        <h2>Favorite Subjects</h2>
+    <section id="subjects-section" class="subjects-section">
+      <h2>Favourite Subjects</h2>
+      <div class="subjects-content row">
         <p>My top three subjects delve into the realm of modern tech. Full Stack Web Development lets me create seamless web apps, merging design with functionality. Agile Rapid Skill Acquisition enables quick adaptation to new tech and methodologies. Meanwhile, Technologies Bootcamp provides intensive, hands-on training across diverse tech areas, keeping me innovative and skilled.</p>
-        <div class="subjects-content row">
-          <div class="col-4">
-            <div class="subject">
-              <img src="images/icons8-backend-development-50.png" alt="Full Stack Web Development">
-              <p>Full Stack Web Development</p>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="subject">
-              <img src="images/icons8-chatbot-64.png" alt="Technologies Bootcamp">
-              <p>Technologies Bootcamp</p>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="subject">
-              <img src="images/icons8-visualization-skill-50.png" alt="Agile Rapid Skill Acquisition">
-              <p>Agile Rapid Skill Acquisition</p>
-            </div>
-          </div>
+        <div class="subject col-12 col-4">
+          <img src="images/icons8-backend-development-50.png" alt="Full Stack Web Development">
+          <p>Full Stack Web Development</p>
+        </div>
+        <div class="subject col-12 col-4">
+          <img src="images/icons8-chatbot-64.png" alt="Technologies Bootcamp">
+          <p>Technologies Bootcamp</p>
+        </div>
+        <div class="subject col-12 col-4">
+          <img src="images/icons8-visualization-skill-50.png" alt="Agile Rapid Skill Acquisition">
+          <p>Agile Rapid Skill Acquisition</p>
         </div>
       </div>
     </section>
@@ -86,21 +82,21 @@
       <div class="places-content row">
         <div class="col-12-sm col-4">
           <div class="historic-place">
-            <img src="images/Mandela House.jpg" alt="Historic Place 1">
+            <img src="images/Mandela House.jpg" alt="Mandela House">
             <h3>Mandela House</h3>
             <p>The Mandela House at 71 Vilakazi Street, Soweto, was once the residence of Nelson Mandela and is now a museum dedicated to his legacy. It provides insights into the Mandela family's life during the apartheid era and the struggles they faced. The house is filled with memorabilia, paintings, and photographs that tell the story of the Mandela family.</p>
           </div>
         </div>
         <div class="col-12-sm col-4">
           <div class="historic-place">
-            <img src="images/Reef.jpg" alt="Historic Place 2">
+            <img src="images/Reef.jpg" alt="Gold Reef City">
             <h3>Gold Reef City</h3>
-            <p>Gold Reef City is a popular amusement park located in Johannesburg, South Africa. It’s situated on an old gold mine that ceased operation in 1971 and offers a variety of themed rides, historical exhibits, and entertainment. The park celebrates the gold rush era with attractions that allow visitors to experience the history of gold mining in the region</p>
+            <p>Gold Reef City is a popular amusement park located in Johannesburg, South Africa. It’s situated on an old gold mine that ceased operation in 1971 and offers a variety of themed rides, historical exhibits, and entertainment. The park celebrates the gold rush era with attractions that allow visitors to experience the history of gold mining in the region.</p>
           </div>
         </div>
         <div class="col-12-sm col-4">
           <div class="historic-place">
-            <img src="images/Constitutional Hill.jpg" alt="Historic Place 3">
+            <img src="images/Constitutional Hill.jpg" alt="Constitution Hill">
             <h3>Constitution Hill</h3>
             <p>Constitution Hill is a former prison and military fort that bears witness to South Africa's turbulent past and its transition to democracy. It is now home to the Constitutional Court and a major human rights precinct. The site includes the Old Fort, Women's Jail, and Number Four Museum, each with its own significant history.</p>
           </div>

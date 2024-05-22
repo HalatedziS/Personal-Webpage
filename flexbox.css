@@ -1,3 +1,4 @@
+/* Global styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +11,7 @@ body {
   background-image: linear-gradient(to bottom, #4da0b0, #d39d38);
 }
 
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -18,6 +20,7 @@ body {
   flex-direction: column;
 }
 
+/* Header styles */
 header {
   text-align: center;
   margin-bottom: 20px;
@@ -31,16 +34,15 @@ header h1 {
   color: #333;
 }
 
+/* Navbar styles */
 .navbar {
   width: 200px;
-  background-color:blur 95% #a4b4a4;
+  background-color: rgba(164, 180, 164, 0.95);
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   transition: left 0.3s ease;
-  
-  
 }
 
 .navbar ul {
@@ -63,6 +65,7 @@ header h1 {
   background-color: #8e928e;
 }
 
+/* Main content styles */
 main {
   margin-left: 200px;
   padding: 20px;
@@ -74,22 +77,22 @@ section {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
 }
 
 img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  
 }
 
+/* Intro section styles */
 .intro-section {
-  background-image: url(images/Table.jpg); 
-display: flex;
+  background-image: url(images/Table.jpg);
+  display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
+
 .intro-text {
   flex: 1;
 }
@@ -99,6 +102,7 @@ display: flex;
   border-radius: 10%;
 }
 
+/* Subjects section styles */
 .subjects-content {
   display: flex;
   flex-wrap: wrap;
@@ -116,6 +120,7 @@ display: flex;
   height: auto;
 }
 
+/* Language section styles */
 .language-content table {
   width: 100%;
   border-collapse: collapse;
@@ -132,42 +137,87 @@ display: flex;
 .language-content th {
   background-color: #f2f2f2;
 }
-.historic-place img{
-  flex: auto;
-  width: 300; 
-  height: 180;
-  margin-right: auto;
+
+/* Historic places section styles */
+.historic-places-section {
+  display: flex;
+  flex-direction: column;
 }
-.subjects-content {
+
+.historic-places-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.subject {
-  flex: 1; 
+.historic-place {
+  flex: 1 1 calc(33% - 20px); /* Flex basis for horizontal layout */
   margin-bottom: 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.historic-place img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
-@media (max-width: 600px) {
-  .subject {
-    flex-basis: 100%; 
-    margin-bottom: 20px;
+.historic-place .place-text {
+  flex: 1;
+  padding: 10px;
+}
+
+@media (max-width: 900px) {
+  .historic-places-content {
+    flex-direction: column;
+  }
+
+  .historic-place {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .historic-place img {
+    width: 100%;
   }
 }
-.historic-places-section .places-content {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.historic-place {
-  width: 50%; /* Display two items per row on wide screens */
-}
+/* Responsive design */
+@media (max-width: 600px) {
+  .subject {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
 
-@media only screen and (max-width: 600px) {
   .historic-place {
-    width: 100%; /* Display one item per row on small screens */
+    width: 100%;
+  }
+
+  .historic-place img {
+    width: 100%;
+  }
+
+  .historic-place .place-text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    background-color: lightyellow;
   }
 }
